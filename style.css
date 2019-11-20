@@ -426,7 +426,7 @@ input:checked+label.pack {
 
 .page.three.hello.finish {
     animation: third 1s;
-    transform: translate(-5000%, -5000%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     opacity: 0;
     top: -500%;
 }
