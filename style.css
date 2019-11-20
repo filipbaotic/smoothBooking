@@ -411,7 +411,6 @@ input:checked+label.pack {
         transform: translate(-50%, -50%) scale(1);
         opacity: 1;
         top: 50%;
-        z-index: 5;
     }
     70% {
         transform: translate(-50%, -50%) scale(0.9);
@@ -421,17 +420,15 @@ input:checked+label.pack {
     71%,
     100% {
         top: -100%;
-        transform: translate(-50%, -5000%) scale(0);
-        z-index: 3;
+        transform: translate(-5000%, -5000%) scale(0);
     }
 }
 
 .page.three.hello.finish {
     animation: third 1s;
-    transform: translate(-50%, -5000%) scale(0);
+    transform: translate(-5000%, -5000%) scale(0);
     opacity: 0;
-    top: -100%;
-    z-index: 3;
+    top: -500%;
 }
 
 .form {
