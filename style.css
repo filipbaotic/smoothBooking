@@ -109,19 +109,19 @@ a.top.clickable {
 
 /* MEDIA ONLY FOR IPHONES WITH NOTCH */
 
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (display-mode: fullscreen) and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     a.top {
         top: 45px;
     }
 }
 
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (display-mode: fullscreen) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
     a.top {
         top: 45px;
     }
 }
 
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (display-mode: fullscreen) and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
     a.top {
         top: 45px;
     }
