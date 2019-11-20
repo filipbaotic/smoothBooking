@@ -11,6 +11,21 @@ html {
     overflow-y: hidden!important;
 }
 
+@keyframes turnWhite {
+    0%,
+    90% {
+        background: #7E9896;
+    }
+    100% {
+        background: #FFFFFF;
+    }
+}
+
+body.white {
+    background: #FFFFFF;
+    animation: turnWhite 1s;
+}
+
 @font-face {
     font-family: Lucca-Regular;
     src: url(Lucca-Regular.otf);
@@ -119,5 +134,6 @@ a.logo.white {
     font-size: 0px;
     text-shadow: 0 0 0;
     transform: scale(40);
+    box-shadow: 0 0 0 0;
     animation: start 1s ease-in-out;
 }
