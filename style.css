@@ -1,6 +1,6 @@
 body,
 html {
-    background: #7E9896;
+    background: #7E9898;
     font-family: SFProText-Medium;
     font-size: 18px;
     color: #444444;
@@ -14,7 +14,7 @@ html {
 @keyframes turnWhite {
     0%,
     90% {
-        background: #7E9896;
+        background: #7E9898;
     }
     100% {
         background: #FFFFFF;
@@ -238,13 +238,6 @@ label.pack {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
-    label.pack {
-        width: 250px;
-        height: 40px;
-    }
-}
-
 label.pack .name {
     position: absolute;
     left: 0;
@@ -301,14 +294,19 @@ label.pack.golden .name {
     background: #C2B8AC;
 }
 
-input[type="radio"] {
+input[name="pack"] {
     display: none;
     visibility: hidden;
 }
 
+label.pack.after {
+    opacity: .4;
+    transition: .2s ease-in-out;
+}
+
 input:checked+label.pack {
     box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.3);
-    transform: scale(1.005);
+    opacity: 1!important;
     transition: .2s ease-in-out;
 }
 
@@ -318,13 +316,43 @@ input:checked+label.pack {
     }
     label.pack {
         margin: 10px;
+        width: 250px;
+        height: 40px;
     }
     label.pack:first-of-type {
         margin-top: 40px;
+    }
+    .next-pack {
+        margin-top: 20px;
     }
     label.pack .name {
         text-align: center;
         width: 250px;
         padding: 0;
     }
+}
+
+.next-pack {
+    background: #D5D5D5;
+    box-shadow: 1px 4px 20px 0 rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-family: Lucca-Regular;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.87px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.40);
+    display: inline-block;
+    cursor: pointer;
+    pointer-events: none;
+    transition-duration: .2s;
+}
+
+.next-pack.clickable {
+    background: #7E9898;
+    pointer-events: auto;
+    transition-duration: .2s;
 }
