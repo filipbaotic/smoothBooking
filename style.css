@@ -32,7 +32,7 @@ body.white {
 }
 
 @font-face {
-    font-family: SF Display Pro;
+    font-family: SFProText-Medium;
     src: url(SF-Pro-Display-Medium.otf);
     font-weight: Medium;
 }
