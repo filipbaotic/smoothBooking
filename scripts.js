@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var one = $(".page.one");
     var two = $(".page.two");
+    var three = $(".page.three");
     var start = $(".start");
     var body = $("body");
     var logo = $(".top");
@@ -12,6 +13,12 @@ $(document).ready(function() {
         body.addClass("white");
         logo.addClass("clickable");
         two.addClass("pick");
+    });
+
+    $(".next-pack").click(function(e) {
+        e.preventDefault();
+        two.addClass("byebye");
+        three.addClass("hello");
     });
 
     $("input[name='pack']").change(function() {
