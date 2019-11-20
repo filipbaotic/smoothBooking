@@ -24,10 +24,10 @@
 
     <a href="" class="top"></a>
 
-    <div class="page two">
-        <div class="title-step">Pick package:</div>
+    <form>
+        <div class="page two">
+            <div class="title-step">Pick package:</div>
 
-        <form>
             <input type="radio" name="pack" value="portrait" id="pack1" />
             <label for="pack1" class="pack portrait">
                 <div class="name">Portrait</div>
@@ -47,28 +47,41 @@
             <label for="pack4" class="pack golden">
                 <div class="name">Golden</div>
             </label>
-        </form>
+            <div>
+                <div class="next-pack">Next</div>
+            </div>
+        </div>
 
-        <div class="next-pack">Next</div>
-    </div>
 
+        <div class="page three">
+            <div class="form only">
+                Full name <input class="gray" type="text" name="name" id="name" autocomplete="off">
+            </div>
+            <div class="form">
+                Date <input class="gray" type="text" name="date" id="date" placeholder="DD.MM.YYYY." autocomplete="off">
+            </div>
+            <div class="form right">
+                Location <input class="gray" type="text" name="location" id="location" autocomplete="off">
+            </div>
+            <div class="form">
+                Phone number <input class="gray" type="tel" name="number" id="number" autocomplete="off">
+            </div>
+            <div class="form right">
+                Mail <input class="gray" type="text" name="mail" id="mail" autocomplete="off">
+            </div>
+            <div class="form full">
+                Additional info
+                <opt>(optional)</opt> <input class="gray" type="text" name="info" autocomplete="off">
+            </div>
+            <div class="center"><button class="send" type="submit">Send</button></div>
+        </div>
+    </form>
 
-    <div class="page three">
-        <div class="form only">
-            Full name <input class="gray" type="text" name="name" autocomplete="off">
-        </div>
-        <div class="form">
-            Date <input class="gray" type="text" name="date" placeholder="DD.MM.YYYY." autocomplete="off">
-        </div>
-        <div class="form right">
-            Location <input class="gray" type="text" name="location" autocomplete="off">
-        </div>
-        <div class="form">
-            Phone Number <input class="gray" type="tel" name="number" autocomplete="off">
-        </div>
-        <div class="form right">
-            Mail <input class="gray" type="mail" name="mail" autocomplete="off">
-        </div>
+    <div class="circle"></div>
+
+    <div class="page four">
+        <a href="" class="logo white end"></a>
+        <div>Booked!<br>You will receive an answer as soon as possible.</div>
     </div>
 
 </body>
