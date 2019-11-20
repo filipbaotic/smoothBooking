@@ -65,6 +65,21 @@ body.white {
     animation: land 1s;
 }
 
+@keyframes woosh {
+    0%,
+    95% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(-1000%);
+    }
+}
+
+.page.one.gone {
+    transform: translateY(-1000%);
+    animation: woosh 1.2s;
+}
+
 @media only screen and (max-width: 700px) {
     .page.one {
         width: calc(100% - 40px);
@@ -72,17 +87,28 @@ body.white {
     }
 }
 
-a.logo {
+a.top {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     background: url(logo.png);
+    background-size: 117px 25px;
     width: 117px;
     height: 25px;
     margin: 5px 0;
     display: inline-block;
+    z-index: 100;
+    pointer-events: none;
+}
+
+a.top.clickable {
+    pointer-events: auto;
 }
 
 a.logo.white {
     background: url(white.png);
-    background-size: cover;
+    background-size: 117px 25px;
     width: 117px;
     height: 25px;
     margin: 5px 0;
@@ -141,6 +167,7 @@ a.logo.white {
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.40);
     display: inline-block;
     transform: scale(1);
+    cursor: pointer;
 }
 
 .activated {
@@ -151,4 +178,5 @@ a.logo.white {
     transform: scale(40);
     box-shadow: 0 0 0 0;
     animation: start 1s ease-in-out;
+    cursor: default;
 }
