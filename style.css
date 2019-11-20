@@ -584,3 +584,9 @@ input.gray {
     animation: bangg 1s;
     transform: translate(-50%, -50%) scale(1);
 }
+
+@media only screen and (max-width: 450px) {
+    .page.one {
+        width: calc(100% - 40px);
+    }
+}
