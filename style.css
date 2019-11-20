@@ -182,7 +182,7 @@ a.logo.white {
 }
 
 .page.two {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 1000%);
@@ -228,7 +228,7 @@ a.logo.white {
     position: relative;
     display: inline-block;
     width: 300px;
-    height: 200px;
+    height: 180px;
     margin: 10px;
     border-radius: 5px;
     overflow: hidden;
@@ -248,6 +248,7 @@ a.logo.white {
     color: #FFFFFF;
     letter-spacing: 0.87px;
     line-height: 40px;
+    text-align: left;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.40);
 }
 
