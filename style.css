@@ -7,7 +7,6 @@ html {
     letter-spacing: -0.84px;
     margin: 0;
     padding: 0;
-    position: fixed;
     overflow-x: hidden!important;
     overflow-y: hidden!important;
 }
