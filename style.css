@@ -421,10 +421,11 @@ input:checked+label.pack {
     100% {
         top: -100%;
         transform: translate(-50%, -5000%) scale(0);
+        visibility: hidden;
     }
 }
 
-.page.three.finish {
+.page.three.hello.finish {
     animation: third 1s;
     transform: translate(-50%, -5000%) scale(0);
     opacity: 0;
