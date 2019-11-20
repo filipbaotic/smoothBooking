@@ -88,7 +88,7 @@ body.white {
 }
 
 a.top {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -224,19 +224,28 @@ a.logo.white {
     margin: 10px 0;
 }
 
-.pack {
+label.pack {
     position: relative;
     display: inline-block;
     width: 300px;
     height: 180px;
-    margin: 10px;
+    margin: 15px;
     border-radius: 5px;
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.2);
+    transition: .2s ease-in-out;
+    cursor: pointer;
 }
 
-.pack .name {
+@media only screen and (max-width: 700px) {
+    label.pack {
+        width: 250px;
+        height: 40px;
+    }
+}
+
+label.pack .name {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -252,42 +261,70 @@ a.logo.white {
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.40);
 }
 
-.pack.portrait {
+label.pack.portrait {
     background: url(portrait.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-.pack.portrait .name {
+label.pack.portrait .name {
     background: #D1C3B2;
 }
 
-.pack.senior {
+label.pack.senior {
     background: url(senior.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-.pack.senior .name {
+label.pack.senior .name {
     background: #C79492;
 }
 
-.pack.cupcake {
+label.pack.cupcake {
     background: url(cupcake.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-.pack.cupcake .name {
+label.pack.cupcake .name {
     background: #B2C3D1;
 }
 
-.pack.golden {
+label.pack.golden {
     background: url(golden.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-.pack.golden .name {
+label.pack.golden .name {
     background: #C2B8AC;
+}
+
+input[type="radio"] {
+    display: none;
+    visibility: hidden;
+}
+
+input:checked+label.pack {
+    box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.005);
+    transition: .2s ease-in-out;
+}
+
+@media only screen and (max-width: 700px) {
+    .page.two {
+        width: calc(100% - 40px);
+    }
+    label.pack {
+        margin: 10px;
+    }
+    label.pack:first-of-type {
+        margin-top: 40px;
+    }
+    label.pack .name {
+        text-align: center;
+        width: 250px;
+        padding: 0;
+    }
 }
