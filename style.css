@@ -515,6 +515,10 @@ input.gray {
     display: inline-block;
     cursor: pointer;
     transition: .2s ease-in-out;
+    border: 0px solid;
+    outline-color: transparent;
+    outline-style: none;
+    outline: 0!important;
 }
 
 .send:disabled {
@@ -586,7 +590,7 @@ input.gray {
 }
 
 @media only screen and (max-width: 450px) {
-    .page.one {
+    .page.four {
         width: calc(100% - 40px);
     }
 }
