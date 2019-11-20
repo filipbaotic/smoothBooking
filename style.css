@@ -1,0 +1,121 @@
+body,
+html {
+    background: #7E9896;
+    font-family: SFProText-Medium;
+    font-size: 18px;
+    color: #444444;
+    letter-spacing: -0.84px;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Lucca-Regular;
+    src: url(Lucca-Regular.otf);
+}
+
+@font-face {
+    font-family: SF Display Pro;
+    src: url(SF-Pro-Display-Medium.otf);
+    font-weight: Medium;
+}
+
+@font-face {
+    font-family: SFProText-Semibold;
+    src: url(SF-Pro-Display-Semibold.otf);
+}
+
+.page.one {
+    position: relative;
+    width: 700px;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 700px) {
+    .page.one {
+        width: calc(100% - 40px);
+        margin: auto;
+    }
+}
+
+a.logo {
+    background: url(logo.png);
+    width: 117px;
+    height: 25px;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+a.logo.white {
+    background: url(white.png);
+    background-size: cover;
+    width: 117px;
+    height: 25px;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.title.one {
+    font-family: SFProText-Semibold;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.50);
+    letter-spacing: -1px;
+    text-align: center;
+    line-height: 30px;
+    padding: 40px 0;
+    max-width: 435px;
+    margin: auto;
+}
+
+@keyframes start {
+    0% {
+        border-radius: 5px;
+        width: 140px;
+        font-size: 20px;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.40);
+        transform: scale(1);
+    }
+    25% {
+        font-size: 0px;
+        text-shadow: 0 0 0;
+        border-radius: 40px;
+        width: 40px;
+        transform: scale(1);
+    }
+    75%,
+    100% {
+        border-radius: 40px;
+        width: 40px;
+        transform: scale(40);
+    }
+}
+
+.start {
+    background: #FFFFFF;
+    box-shadow: 1px 4px 20px 0 rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-family: Lucca-Regular;
+    font-size: 20px;
+    color: #7F9A98;
+    letter-spacing: 0.87px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.40);
+    display: inline-block;
+    transform: scale(1);
+}
+
+.activated {
+    border-radius: 40px;
+    width: 40px;
+    font-size: 0px;
+    text-shadow: 0 0 0;
+    transform: scale(40);
+    animation: start 1s ease-in-out;
+}
