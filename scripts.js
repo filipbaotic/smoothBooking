@@ -13,4 +13,12 @@ $(document).ready(function() {
         logo.addClass("clickable");
         two.addClass("pick");
     });
+
+    $("input[name='pack']").change(function() {
+        if ($(this).is(':checked')) {
+            $('label.pack').addClass("after");
+            $('.next-pack').addClass("clickable");
+        }
+    });
+
 });
