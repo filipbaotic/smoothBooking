@@ -38,7 +38,7 @@ body.white {
 
 body.white.back {
     background: #7E9898;
-    animation: turnBack 1s;
+    animation: turnBack .7s;
 }
 
 @font-face {
@@ -430,6 +430,7 @@ input:checked+label.pack {
     transform: translate(-50%, -5000%) scale(0);
     opacity: 0;
     top: -100%;
+    z-index: 3;
 }
 
 .form {
