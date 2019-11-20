@@ -115,7 +115,7 @@ a.logo.white {
     display: inline-block;
 }
 
-.title.one {
+.title-one {
     font-family: SFProText-Semibold;
     font-size: 30px;
     color: rgba(0, 0, 0, 0.50);
@@ -179,4 +179,114 @@ a.logo.white {
     box-shadow: 0 0 0 0;
     animation: start 1s ease-in-out;
     cursor: default;
+}
+
+.page.two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 1000%);
+    width: 700px;
+    background: #FFFFFF;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+}
+
+@keyframes two {
+    0%,
+    1% {
+        transform: translate(-50%, 1000%);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+.page.two.pick {
+    transform: translate(-50%, -50%);
+    animation: two 1.2s;
+    opacity: 1;
+}
+
+.title-step {
+    font-family: SFProText-Semibold;
+    font-size: 30px;
+    color: #000000;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.pack {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pack .name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 270px;
+    height: 40px;
+    padding: 0 15px;
+    font-family: Lucca-Regular;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.87px;
+    line-height: 40px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.40);
+}
+
+.pack.portrait {
+    background: url(portrait.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.pack.portrait .name {
+    background: #D1C3B2;
+}
+
+.pack.senior {
+    background: url(senior.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.pack.senior .name {
+    background: #C79492;
+}
+
+.pack.cupcake {
+    background: url(cupcake.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.pack.cupcake .name {
+    background: #B2C3D1;
+}
+
+.pack.golden {
+    background: url(golden.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.pack.golden .name {
+    background: #C2B8AC;
 }
