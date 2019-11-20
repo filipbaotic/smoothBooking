@@ -29,6 +29,7 @@ $(document).ready(function() {
         body.addClass("back");
         circle.addClass("boom");
         four.addClass("ready");
+        logo.removeClass("clickable");
     });
 
     $("input[name='pack']").change(function() {
