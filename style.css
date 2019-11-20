@@ -38,7 +38,7 @@ body.white {
 
 body.white.back {
     background: #7E9898;
-    animation: turnBack .7s;
+    animation: turnBack 1.4s;
 }
 
 @font-face {
@@ -425,7 +425,7 @@ input:checked+label.pack {
 }
 
 .page.three.hello.finish {
-    animation: third 1s;
+    animation: third 2s;
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
     top: -500%;
@@ -501,6 +501,10 @@ input.gray {
     text-align: center;
 }
 
+opt {
+    opacity: .5;
+}
+
 .send {
     background: #7E9898;
     pointer-events: auto;
@@ -558,7 +562,7 @@ input.gray {
 }
 
 .circle.boom {
-    animation: bowow 1s ease-in-out;
+    animation: bowow 2s ease-in-out;
     transform: translate(-50%, -50%) scale(0);
 }
 
@@ -589,7 +593,7 @@ input.gray {
 }
 
 .page.four.ready {
-    animation: bangg 1s;
+    animation: bangg 2s;
     transform: translate(-50%, -50%) scale(1);
 }
 
