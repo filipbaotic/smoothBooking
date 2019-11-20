@@ -417,13 +417,13 @@ input:checked+label.pack {
     }
     71%,
     100% {
-        transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -5000%) scale(0);
     }
 }
 
 .page.three.hello.finish {
     animation: third 1s;
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -5000%) scale(0);
     opacity: 0;
 }
 
