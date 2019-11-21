@@ -408,27 +408,27 @@ input:checked+label.pack {
 @keyframes third {
     0%,
     50% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 1;
-        top: 50%;
+        transform: translate(-50%, -50%) scale(1)!important;
+        opacity: 1!important;
+        top: 50%!important;
     }
     70% {
-        transform: translate(-50%, -50%) scale(0.9);
-        opacity: 0;
-        top: 50%;
+        transform: translate(-50%, -50%) scale(0.9)!important;
+        opacity: 0!important;
+        top: 50%!important;
     }
     71%,
     100% {
-        top: -100%;
-        transform: translate(-5000%, -5000%) scale(0);
+        top: -100%!important;
+        transform: translate(-5000%, -5000%) scale(0)!important;
     }
 }
 
 .page.three.hello.finish {
     animation: third 2s;
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
-    top: -500%;
+    transform: translate(-50%, -50%) scale(0)!important;
+    opacity: 0!important;
+    top: -500%!important;
 }
 
 .form {
