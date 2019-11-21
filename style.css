@@ -424,7 +424,7 @@ input:checked+label.pack {
 }
 
 .page.three.hello.finish {
-    animation: third 1s;
+    animation: third 1.4s;
     transform: translate(-50%, -50%) scale(0)!important;
     opacity: 0!important;
 }
@@ -560,7 +560,7 @@ opt {
 }
 
 .circle.boom {
-    animation: bowow .8s ease-in-out;
+    animation: bowow .6s ease-in-out;
     transform: translate(-50%, -50%) scale(0);
 }
 
@@ -591,7 +591,7 @@ opt {
 }
 
 .page.four.ready {
-    animation: bangg .8s;
+    animation: bangg .6s;
     transform: translate(-50%, -50%) scale(1);
 }
 
